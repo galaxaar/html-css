@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ejercicio de la practica final">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+
+            <div class="header__group--left">
+
+                <a href="index.html" class="header__logo-link" aria-label="Ir a la página de inicio de Netflix">
+                    <img class="header__logo" src="images/logo.svg" alt="Netflix">
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li><a href="index.html" class="header__link"> Inicio </a></li>
+                        <li><a href="#series" class="header__link"> Series </a></li>
+                        <li><a href="#peliculas" class="header__link"> Películas </a></li>
+                        <li><a href="#juegos" class="header__link"> Juegos </a></li>
+                        <li><a href="#novedades" class="header__link"> Novedades más vistas </a></li>
+                        <li><a href="#mi_lista" class="header__link"> Mi lista </a></li>
+                        <li><a href="#explorar" class="header__link"> Explorar por idiomas </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__group--right">
+                <button class="header__srch-icon" aria-label="Buscar">
+                    <img alt="Search Icon" src="images/search-icon.svg">
+                </button>
+                <ul class="header__item">
+                    <li><a href="#" class="header__link">Infantil</a></li>
+                </ul>
+                <button class="header__notif-icon" aria-label="Notificaciones">
+                    <img alt="Notification Icon" src="images/bell-icon.svg">
+                </button>
+
+
+                <div class="profile">
+                    <img src="images/avatar-icon.svg" alt="Mi Perfil" class="profile__avatar">
+
+                    <div class="profile__dropdown">
+                        <ul class="profile__list">
+                            <li class="profile__item"><a href="#" class="profile__link">Administrar perfiles</a></li>
+                            <li class="profile__item"><a href="#" class="profile__link">Transferir perfil</a></li>
+                            <li class="profile__item"><a href="#" class="profile__link">Cuenta</a></li>
+                            <li class="profile__item"><a href="#" class="profile__link">Centro de ayuda</a></li>
+                            <li class="profile__divider"></li>
+                            <li class="profile__item"><a href="#" class="profile__link">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__background">
+                <video class="hero__video" autoplay muted loop playsinline>
+                    <source src="videos/hmcastle.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <div class="hero__content">
+                <h1>Howl's Moving Castle</h1>
+                <h3> <strong> Último día para ver este título en Netflix: <br>
+                        2 de abril </strong></h3>
+                <p>La joven Sophie trabaja en la sombrería de su difunto padre en una ciudad<br>
+                    muy aburrida. Pero las cosas se ponen interesantes cuando se transforma en una anciana.</p>
+
+
+
+                <div class="hero__buttons">
+                    <button class="hero__btn hero__btn--primary">
+                        <span aria-hidden="true">▶</span> Reproducir
+                    </button>
+                    <button class="hero__btn hero__btn--secondary">
+                        <span aria-hidden="true">ⓘ</span> Más información
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="catalog__container">
+
+                <div class="catalog__group">
+                    <h2 id="seguir_viendo" class="catalog__title">Seguir viendo por Galaxar</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/the-devil-wears-prada.jpeg" alt="The Devil Wears Prada"
+                                class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-office.jpeg" alt="The Office" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/spirited-away.jpeg" alt="spirited-away" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/shutter-island.jpeg" alt="Shutter Island" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/girlmore-girls.jpeg" alt="Gilmore Girls" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/shrek_2.jpeg" alt="Shrek 2" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/bee-movie.jpeg" alt="Bee Movie" class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__group">
+                    <h2 id="series" class="catalog__title">Series</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/sex-and-the-city.avif" alt="Sex and The City" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/love-death-and-robots.jpg" alt="Love Death and Robots"
+                                class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-haunting-of-hill-house.jpg" alt="The Haunting of Hill House"
+                                class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/outlander.jpeg" alt="Outlander" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/bridgerton.jpeg" alt="Bridgerton" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/when-the-phone-rings.webp" alt="When The Phone Rings" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/parasite.jpeg" alt="Parasite" class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__group">
+                    <h2 id="peliculas" class="catalog__title">Películas</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/fried-green-tomatoes.jpeg" alt="Fried Green Tomatoes" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/interstellar.jpeg" alt="Interstellar" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/pride-prejudice.png" alt="Pride and Prejudice" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/pulp-fiction.jpeg" alt="Pulp Fiction" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/parasite.jpeg" alt="Parasite" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/bridget-jones-diary.jpeg" alt="Bridget Jones's Diary" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/spirited-away.jpeg" alt="spirited-away" class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__group">
+                    <h2 id="peliculas" class="catalog__title">Juegos</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/puzzle-gods-game.png" alt="Puzzle gods" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/exploding-kittens-game.png" alt="Exploding Kittens" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/word-trails-game.png" alt="Word Trails" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/into-the-dead-game.png" alt="Into The Dead 2" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/storyteller-game.png" alt="Storyteller" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/stranger-things-game.webp" alt="Stranger Things: 1984"
+                                class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/black-mirror-multis-game.png" alt="Black Mirror: Multis"
+                                class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__group">
+                    <h2 id="novedades" class="catalog__title">Novedades más vistas</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/our-oceans.webp" alt="Our Oceans" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-northman.jpeg" alt="The Northman" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-haunting-of-hill-house.jpg" alt="The Haunting of Hill House"
+                                class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-others.jpeg" alt="The Others" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/bee-movie.jpeg" alt="Bee Movie" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/wallace-and-gromit.jpeg" alt="Wallace And Gromit" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/pulp-fiction.jpeg" alt="Pulp Fiction" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-haunting-of-hill-house.jpg" alt="The Haunting of Hill House"
+                                class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__group">
+                    <h2 id="mi_lista" class="catalog__title">Mi lista</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/the-duchess.jpeg" alt="The Dutchess" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/dune-part-2.webp" alt="Dune Part Two" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/megamind.png" alt="Megamind" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/outlander.jpeg" alt="Outlander" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/bridgerton.jpeg" alt="Bridgerton" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-big-bang-theory.jpeg" alt="The Big Bang Theory" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/girlmore-girls.jpeg" alt="Gilmore Girls" class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__group">
+                    <h2 id="explorar" class="catalog__title">Explorar por idiomas</h2>
+
+                    <div class="catalog__list">
+                        <div class="catalog__card">
+                            <img src="images/la-que-se-avecina.jpeg" alt="La Que Se Avecina" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/paranormal-activity.webp" alt="Paranormal Activity" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/when-the-phone-rings.webp" alt="When The Phone Rings" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/love-death-and-robots.jpg" alt="Love Death and Robots"
+                                class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/interstellar.jpeg" alt="Interstellar" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/the-office.jpeg" alt="The Office" class="catalog__img">
+                        </div>
+                        <div class="catalog__card">
+                            <img src="images/megamind.png" alt="Megamind" class="catalog__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/netflixespana/" target="_blank" class="footer__social-link"><img src="images/facebook-icon.svg"
+                            class="footer__social-icon" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/NetflixES" target="_blank" class="footer__social-link"><img src="images/instagram-icon.svg"
+                            class="footer__social-icon" alt="Instagram"></a>
+                    <a href="https://x.com/netflixes" target="_blank" class="footer__social-link"><img src="images/twitter-icon.svg"
+                            class="footer__social-icon" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCT2UUebPuLke_BShrDh_YEA" target="_blank" class="footer__social-link"><img src="images/youtube-icon.svg"
+                            class="footer__social-icon" alt="Youtube"></a>
+                </div>
+
+                <ul class="footer__links">
+                    <li><a href="#">Audiodescripción</a></li>
+                    <li><a href="#">Inversores</a></li>
+                    <li><a href="#">Avisos legales</a></li>
+                    <li><a href="#">Opciones de anuncios</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Empleo</a></li>
+                    <li><a href="#">Preferencias de cookies</a></li>
+                    <li><a href="#">Tarjetas regalo</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Información corporativa</a></li>
+                    <li><a href="#">Zona de prensa</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+
+                <div class="footer__copyright">
+                    <p>ⓒ 1997-2026 Netflix, Inc.</p>
+                </div>
+            </div>
+
+        </footer>

@@ -1,0 +1,54 @@
+.catalog {
+    background-color: #141414;
+    padding: 3vw 0;
+
+    .catalog__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 4%;
+        margin-top: -8vw;
+        position: relative;
+        z-index: 5;
+    }
+
+    .catalog__group {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 3px;
+    }
+
+    .catalog__title {
+        font-size: larger;
+        cursor: default;
+        margin-top: auto;
+        scroll-margin-top: 100px;
+    }
+
+    .catalog__list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 240px;
+        gap: 10px;
+        
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px 4%;
+        margin: 0;
+        width: 105%;
+        box-sizing: border-box; 
+        scrollbar-width: thin;
+        scrollbar-color: #1d1c1c #000000;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+    }
+
+    .catalog__img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+        scroll-snap-align: start;
+    }
+}

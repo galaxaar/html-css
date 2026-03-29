@@ -1,0 +1,127 @@
+.header {
+    position: fixed;
+    top: 0 !important;
+    margin: 0 !important;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 50%, transparent);
+    transition: background-color 0.4s;
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4%;
+        height: 68px;
+    }
+
+    .header__group--left {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header__logo-link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header__logo {
+        width: 95px;
+        height: auto;
+        display: block;
+        cursor: default;
+    }
+
+    .header__list {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        font-size: 0.85rem;
+    }
+
+    .header__link{
+        cursor: default;
+    }
+
+    .header__group--right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .header__srch-icon, .header__notif-icon{
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header__item{
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        font-size: 0.85rem;
+    }
+
+    .profile {
+        position: relative;
+        padding: 15px 0;
+        cursor: default;
+    }
+
+    .profile__avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .profile__dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 215px;
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        visibility: hidden;
+        border: 1px solid #333;
+    }
+
+    
+    .profile:hover .profile__dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+    .profile__list {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .profile__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        padding: 8px 15px;
+        display: block;
+        cursor:default;
+    }
+
+    .profile__divider {
+        height: 1px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+}

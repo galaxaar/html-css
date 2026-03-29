@@ -1,0 +1,40 @@
+.footer {
+    background-color: #141414;
+    padding: 50px 0 1px;
+    font-size: 13px;
+    color: #808080;
+
+    .footer__container {
+        margin: 0 auto;
+        padding: 0 20%;
+        align-self: center;
+    }
+
+    .footer__socials{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .footer__social-icon{
+            width: 24px;
+            height: auto;
+            opacity: 0.8;
+    }
+    
+    .footer__links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 0;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    }
+
+    .footer__copyright{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}    
