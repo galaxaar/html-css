@@ -30,17 +30,29 @@
         grid-auto-flow: column;
         grid-auto-columns: 240px;
         gap: 10px;
-        
+
         overflow-x: auto;
         overflow-y: hidden;
         padding: 20px 4%;
         margin: 0;
         width: 105%;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         scrollbar-width: thin;
         scrollbar-color: #1d1c1c #000000;
         scroll-snap-type: x mandatory;
         overscroll-behavior-x: contain;
+    }
+    
+    .catalog__card {
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .catalog__card:hover {
+        transform: scale(1.2);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        cursor: pointer;
     }
 
     .catalog__img {
@@ -50,5 +62,10 @@
         border-radius: 4px;
         transition: transform 0.3s ease;
         scroll-snap-align: start;
+    }
+
+    .game__img{
+        width:auto;
+        height:auto;
     }
 }
